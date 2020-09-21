@@ -1,0 +1,41 @@
+.header {
+  h1 {
+    text-align: center;
+    padding: 10px;
+  }
+}
+.grid__container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+    "header header header header"
+    "side main main main";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px 1fr;
+  div {
+    background-color: lightgray;
+    border: 2p solid green;
+  }
+  .header {
+    grid-area: header;
+  }
+  .side {
+    grid-area: side;
+    width: unset;
+  }
+  .main {
+    grid-area: main;
+  }
+  .nav__sidebar {
+    cursor: pointer;
+    font-size: 30px;
+    &:hover {
+      color: yellowgreen;
+      text-shadow: 3px 3px 3px green;
+    }
+    &:active {
+      color: red;
+      text-shadow: unset;
+    }
+  }
+}

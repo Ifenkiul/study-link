@@ -1,0 +1,57 @@
+.header h1 {
+  text-align: center;
+  padding: 10px;
+}
+
+.grid__container {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+      grid-template-areas: "header header header header" "side main main main";
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 100px 1fr;
+      grid-template-rows: 100px 1fr;
+}
+
+.grid__container div {
+  background-color: lightgray;
+  border: 2p solid green;
+}
+
+.grid__container .header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: header;
+}
+
+.grid__container .side {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: side;
+  width: unset;
+}
+
+.grid__container .main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: main;
+}
+
+.grid__container .nav__sidebar {
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.grid__container .nav__sidebar:hover {
+  color: yellowgreen;
+  text-shadow: 3px 3px 3px green;
+}
+
+.grid__container .nav__sidebar:active {
+  color: red;
+  text-shadow: unset;
+}
+/*# sourceMappingURL=index.css.map */
