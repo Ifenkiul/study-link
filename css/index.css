@@ -4,6 +4,8 @@
 }
 
 .grid__container {
+  -webkit-transition: all 1s;
+  transition: all 1s;
   display: -ms-grid;
   display: grid;
   grid-gap: 10px;
@@ -43,15 +45,33 @@
 .grid__container .nav__sidebar {
   cursor: pointer;
   font-size: 30px;
+  color: lightblue;
+  text-shadow: 3px 3px 3px black;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .grid__container .nav__sidebar:hover {
   color: yellowgreen;
-  text-shadow: 3px 3px 3px green;
+  text-shadow: 3px 3px 3px black;
 }
 
 .grid__container .nav__sidebar:active {
-  color: red;
+  color: lightseagreen;
   text-shadow: unset;
+}
+
+sidebar {
+  background-color: lightblue;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.main__link--item {
+  cursor: pointer;
 }
 /*# sourceMappingURL=index.css.map */

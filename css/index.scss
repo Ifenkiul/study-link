@@ -5,6 +5,7 @@
   }
 }
 .grid__container {
+  transition: all 1s;
   display: grid;
   grid-gap: 10px;
   grid-template-areas:
@@ -29,13 +30,24 @@
   .nav__sidebar {
     cursor: pointer;
     font-size: 30px;
+    color: lightblue;
+    text-shadow: 3px 3px 3px black;
+    transition: all 0.6s;
+    user-select: none;
     &:hover {
       color: yellowgreen;
-      text-shadow: 3px 3px 3px green;
+      text-shadow: 3px 3px 3px black;
     }
     &:active {
-      color: red;
+      color: lightseagreen;
       text-shadow: unset;
     }
   }
+}
+sidebar {
+  background-color: lightblue;
+  transition: all 1s;
+}
+.main__link--item {
+  cursor: pointer;
 }
