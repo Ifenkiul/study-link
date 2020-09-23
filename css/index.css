@@ -40,9 +40,27 @@
   -ms-grid-column: 2;
   -ms-grid-column-span: 3;
   grid-area: main;
+  background-color: grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.grid__container .nav__sidebar {
+.grid__container .main .btn__close--sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.grid__container .main .main__container {
+  width: 100%;
+}
+
+.grid__container .btn__close--sidebar {
   cursor: pointer;
   font-size: 30px;
   color: lightblue;
@@ -55,12 +73,12 @@
           user-select: none;
 }
 
-.grid__container .nav__sidebar:hover {
+.grid__container .btn__close--sidebar:hover {
   color: yellowgreen;
   text-shadow: 3px 3px 3px black;
 }
 
-.grid__container .nav__sidebar:active {
+.grid__container .btn__close--sidebar:active {
   color: lightseagreen;
   text-shadow: unset;
 }
@@ -69,6 +87,18 @@ sidebar {
   background-color: lightblue;
   -webkit-transition: all 1s;
   transition: all 1s;
+}
+
+.sidebar__menu--item {
+  cursor: pointer;
+}
+
+.sidebar__menu--item:hover {
+  color: blueviolet;
+}
+
+.sidebar__menu--item:active {
+  color: white;
 }
 
 .main__link--item {

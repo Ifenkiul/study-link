@@ -26,8 +26,17 @@
   }
   .main {
     grid-area: main;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    .btn__close--sidebar {
+      display: flex;
+    }
+    .main__container {
+      width: 100%;
+    }
   }
-  .nav__sidebar {
+  .btn__close--sidebar {
     cursor: pointer;
     font-size: 30px;
     color: lightblue;
@@ -47,6 +56,15 @@
 sidebar {
   background-color: lightblue;
   transition: all 1s;
+}
+.sidebar__menu--item {
+  cursor: pointer;
+  &:hover {
+    color: blueviolet;
+  }
+  &:active {
+    color: white;
+  }
 }
 .main__link--item {
   cursor: pointer;
