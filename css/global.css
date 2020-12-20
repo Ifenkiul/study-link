@@ -1,0 +1,16 @@
+.links-category {
+  color: red;
+  cursor: pointer;
+}
+.links-category:hover {
+  color: green;
+}
+
+.link_element-check {
+  cursor: pointer;
+}
+.link_element-check:checked ~ a {
+  background-color: aqua;
+}
+
+/*# sourceMappingURL=global.css.map */

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Study Link</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/global.css">
 </head>
 
 <body>
@@ -13,12 +14,13 @@
 
         <div class="header">
             <h1>STUDY-LINKS</h1>
+            <button class="btn_save" action="saveData">SAVE</button>
         </div>
         <sidebar>
             <nav class="sidemenu">
                 <ol class="sidemenu__list">
                     <li class="sidebar__menu--item">HTML</li>
-                    <li class="sidebar__menu--item" data-url="../css.html">CSS</li>
+                    <li class="sidebar__menu--item" data-url="../src/links.json">CSS</li>
                     <li class="sidebar__menu--item">JS</li>
                 </ol>
             </nav>
@@ -27,6 +29,16 @@
         <main class="main">
             <span class="btn__close--sidebar">&#8678;</span>
             <div class="main_container"></div>
+
+            <!--LINK TEMPLATE-->
+            <!--
+                <div class="link_element">
+                    <label>
+                        <input type="checkbox" class="link_element-check">
+                        <a href="https://www.w3schools.com/css/css_border.asp">CSS Borders</a>
+                    </label>
+                </div>
+            -->
 
         </main>
 
